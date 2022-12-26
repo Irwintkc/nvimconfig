@@ -11,10 +11,6 @@ local ensure_packer = function()
 end
 local packer_bootstrap = ensure_packer() -- true if packer was just installed
 
-local cmp_status, cmp = pcall(require, "cmp")
-if not cmp_status then
-	return
-end
 -- autocommand that reloads neovim and installs/updates/removes plugins
 -- when file is saved
 vim.cmd([[ 
