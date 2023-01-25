@@ -119,6 +119,9 @@ return packer.startup(function(use)
 	use("SirVer/ultisnips")
 	use("honza/vim-snippets")
 
+	--Magma
+	use({ "dccsillag/magma-nvim", run = ":UpdateRemotePlugins" })
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
