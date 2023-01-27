@@ -2,20 +2,8 @@
 vim.g.vimtex_imaps_enabled = 0
 -- Do not open pdfviwer on compile
 vim.g.vimtex_view_automatic = 0
--- Disable conceal
-vim.g.vimtex_syntax_conceal = {
-	accents = 0,
-	cites = 0,
-	fancy = 0,
-	greek = 0,
-	math_bounds = 0,
-	math_delimiters = 0,
-	math_fracs = 0,
-	math_super_sub = 0,
-	math_symbols = 0,
-	sections = 0,
-	styles = 0,
-}
+vim.o.conceallevel = 1
+vim.g.tex_conceal = "abdmg"
 -- Disable quickfix auto open
 vim.g.vimtex_quickfix_ignore_mode = 0
 -- PDF viewer settings
