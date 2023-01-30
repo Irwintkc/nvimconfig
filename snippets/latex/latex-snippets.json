@@ -55,11 +55,11 @@
   },
   "Display Math — \\( … \\)": {
     "prefix": "$$",
-    "body": ["\\(", "\t$TM_SELECTED_TEXT$1", "\\)"],
+    "body": ["\\( \t$TM_SELECTED_TEXT$1 \\)"],
     "description": "Display Math"
   },
   "Display Math — \\[ … \\]": {
-    "prefix": "$[",
+    "prefix": "$$$$",
     "body": ["\\[", "\t$TM_SELECTED_TEXT$1", "\\]"],
     "description": "Display Math"
   },
