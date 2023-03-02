@@ -37,3 +37,5 @@ opt.splitright = true
 opt.splitbelow = true
 
 opt.iskeyword:append("-")
+
+opt.fillchars:append({ eob = " " })
