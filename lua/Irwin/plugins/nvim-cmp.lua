@@ -59,14 +59,14 @@ cmp.setup({
 				fallback()
 			end
 		end,
-		["<cr>"] = cmp.mapping.confirm({ select = true }),
+		["<cr>"] = cmp.mapping.confirm({ select = false }),
 	},
 	sources = cmp.config.sources({
 		{ name = "nvim_lsp" }, -- lsp
 		{ name = "luasnip" }, -- snippets
 		{ name = "buffer", keyword_length = 3 }, -- text within current buffer
 		{ name = "ultisnips" },
-		{ name = "spell" },
+		{ name = "cspell" },
 	}),
 	formatting = {
 		format = function(entry, vim_item)

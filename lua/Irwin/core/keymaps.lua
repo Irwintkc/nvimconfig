@@ -9,11 +9,15 @@ keymap.set("n", "<leader>nh", ":nohl<CR>")
 
 -- delete single character without copying into register
 keymap.set("n", "x", '"_x')
-
+keymap.set("n", "\\s", "a<C-X><C-S>")
+keymap.set("n", "<leader>z", "z=")
+keymap.set("n", "<leader>zg", "zg")
 -- increment/decrement numbers
 keymap.set("n", "<leader>+", "<C-a>") -- increment
 keymap.set("n", "<leader>-", "<C-x>") -- decrement
 
+keymap.set("v", '"0p', "P")
+keymap.set("n", '"0p', "P")
 -- window management
 keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically
 keymap.set("n", "<leader>sh", "<C-w>s") -- split window horizontally

@@ -2,7 +2,7 @@
 vim.g.vimtex_imaps_enabled = 0
 -- Do not open pdfviwer on compile
 vim.g.vimtex_view_automatic = 0
-vim.o.conceallevel = 1
+vim.o.conceallevel = 0
 vim.g.tex_conceal = "abdmg"
 -- Disable quickfix auto open
 vim.g.vimtex_quickfix_ignore_mode = 0
@@ -17,7 +17,11 @@ vim.g.vimtex_skim_reading_bar = 1
 vim.g.vimtex_indent_enabled = 1
 vim.g.tex_flavor = "latex"
 vim.g.vimtex_compiler_method = "latexmk"
--- Do not auto open quickfix on compile erros
+
+vim.g.vimtex_compiler_latexmk_engines = {
+	_ = "-lualatex",
+}
+-- Do not auto open quickfix on compile erro
 vim.g.vimtex_quickfix_mode = 0
 -- Latex warnings to ignore
 vim.g.vimtex_quickfix_ignore_filters = {

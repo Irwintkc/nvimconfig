@@ -33,13 +33,21 @@ require("catppuccin").setup({
 		return {
 			Comment = { fg = "#C0C0C0" },
 			Folded = { fg = "#679AFF" },
-			NonText = { fg = "#FF3960" },
+			--NonText = { fg = "#FF3960" },
 			CursorLineNr = { fg = "#FFED6B" },
 			LineNrAbove = { fg = "#FEFFCD" },
 			LineNrBelow = { fg = "#FEFFCD" },
 			Statement = { fg = "#FFA8B3" },
 			Normal = { fg = "#FFFFFF" },
 			Delimiter = { fg = "#A5C9FF" },
+			--Special = { fg = "#FFD1A3" },
+			--Operator = {fg = "FEFFCD"},
+			--SpecialChar = { fg = "#FEFFCD" },
+			texCmdGreek = { fg = "#89FFBB" },
+			--texMathSub = { fg = "#89FFBB" },
+			texCmdRef = { fg = "#CFADFF" },
+			--Number = { fg = "#FF0505" },
+			texCmdEnv = { fg = "#C2D69B" },
 		}
 	end,
 	integrations = {
